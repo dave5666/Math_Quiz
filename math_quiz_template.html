@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
+        .question-container { margin: 20px 0; }
+        .option { margin: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; display: inline-block; cursor: pointer; }
+        .option:hover { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+    <div class="question-container">
+        <h2>Question 1</h2>
+        <p>\( 2x^2 - 3x - 5 = 0 \)</p>
+    </div>
+
+    <div class="options">
+        <div class="option" onclick="checkAnswer('A')">Option A: \( -1 \text{ and } 2.5 \)</div>
+        <div class="option" onclick="checkAnswer('B')">Option B: \( 2.5 \text{ and } 3.5 \)</div>
+        <div class="option" onclick="checkAnswer('C')">Option C: \( 3.5 \text{ and } -1 \)</div>
+        <div class="option" onclick="checkAnswer('D')">Option D: \( 4.5 \text{ and } -2 \)</div>
+    </div>
+
+    <script>
+        function checkAnswer(selectedOption) {
+            const correctAnswer = "A";  // Set the correct answer directly
+            if (selectedOption === correctAnswer) {
+                alert("Correct!");
+            } else {
+                alert("Incorrect, try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>
